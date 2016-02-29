@@ -1,0 +1,52 @@
+/* Header Links*/
+ 
+.side .md > ol:not(:first-of-type) {
+    position: absolute;
+    top: -120px;
+    right: 0px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width: 600px;
+    list-style: none;
+}
+ 
+.side .md > ol:not(:first-of-type) a {
+    background-color: #010713;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 5px 0px 5px 5px;
+    text-decoration: none;
+    margin-bottom: 3px;
+    opacity: 0.8;
+}
+ 
+.side .md > ol a:hover {opacity: 1}
+.side .md > ol a[href$='#event'] {border: 2px solid #e29b1e}
+.side .md > ol a[href$='#notice'] {border: 2px solid #228822}
+.side .md > ol a[href$='#discussion'] {border: 2px solid #101828}
+ 
+.side .md > ol a[href$='#event']:after,
+.side .md > ol a[href$='#notice']:after,
+.side .md > ol a[href$='#discussion']:after {
+    margin: 0;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 6px 6px;
+}
+ 
+.side .md > ol a[href$='#event']:after {
+    background-color: #e29b1e;
+    content: "EVENT";
+    color: #8e6106;
+}
+.side .md > ol a[href$='#notice']:after {
+    background-color: #228822;
+    content: "NOTICE";
+    color: #abeaab;
+}
+.side .md > ol a[href$='#discussion']:after {
+    background-color: #101828;
+    content: "DISCUSSION";
+    color: #a9bbab;
+}
