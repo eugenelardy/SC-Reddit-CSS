@@ -1,0 +1,580 @@
+/* Sidebar color changes */
+.side a {color: #fc1d00}
+.side { background-color: #F7F7F7; }
+
+/* Submission page descriptions */
+body.submit-page form#newlink {
+    margin-top: 440px;
+}
+body.submit-page form#newlink .spacer:first-child {
+    display: none;
+}
+body.submit-page .titlebox .md > blockquote {
+    position: absolute;
+    top: 140px;
+    left: 10px;
+    width: 500px;
+    height: 410px;
+    margin: 0px;
+    padding: 4px 10px;
+    background-color: #F6E69F;
+    border: 1px solid orange;
+    border-radius: 5px;
+    overflow: auto;
+}
+body:not(.submit-page) .titlebox .md > blockquote {
+    display: none;
+}
+body.submit-page .titlebox .md > blockquote blockquote {
+    margin: 10px 0px 10px 15px;
+    border: 0px;
+}
+body.submit-page .titlebox .md > blockquote ul {
+    margin: 10px 0px;
+    list-style-type: none;
+}
+body.submit-page .titlebox .md > blockquote li {
+    margin: 3px 0px;
+}
+body.submit-page #text-field .title:after {
+    content: " (Don't forget to add a tag if needed!)";
+}
+#text-field .gray {
+    display: none;
+}
+
+/* flair links/images */
+a[href="/r/supremeclothing/search?q=flair%3AWDYWT&restrict_sr=on&sort=relevance&t=all"]:after { content: url(%%WDYWT%%) }
+a[href="/r/supremeclothing/search?q=flair%3AFSFT&restrict_sr=on&sort=relevance&t=all"]:after { content: url(%%fsft%%) }
+a[href="/r/supremeclothing/search?q=flair%3APICKUP&restrict_sr=on&sort=relevance&t=all"]:after { content: url(%%pickup%%) }
+a[href="/r/supremeclothing/search?q=flair%3ANEWS&restrict_sr=on&sort=relevance&t=all"]:after { content: url(%%news%%) }
+a[href="/r/supremeclothing/search?q=flair%3AWTB&restrict_sr=on&sort=relevance&t=all"]:after { content: url(%%wtb%%) }
+a[href="/r/supremeclothing/search?q=flair%3AQUESTION&restrict_sr=on&sort=relevance&t=all"]:after { content: url(%%question%%) }
+a[href="/r/supremeclothing/search?q=flair%3ADISCUSSION&restrict_sr=on&sort=relevance&t=all"]:after { content: url(%%discussion%%) }
+a[href="/r/supremeclothing/search?q=flair%3AGENERAL&restrict_sr=on&sort=relevance&t=all"]:after { content: url(%%general%%) }
+a[href="/r/supremeclothing/search?q=flair%3ALC&restrict_sr=on&sort=relevance&t=all"]:after { content: url(%%LC%%) }
+a[href="/r/supremeclothing/search?q=flair%3ARESTOCK&restrict_sr=on&sort=relevance&t=all"]:after { content: url(%%restock%%) }
+a[href="/r/supremeclothing/search?q=flair%3ALEAK&restrict_sr=on&sort=relevance&t=all"]:after { content: url(%%leak%%) }
+
+
+#link-desc:before {
+    display: block;
+    font-size: 25px;    
+    font-weight: bold;    
+    content: "PLEASE TAG YOUR FS/FT POSTS WITH YOUR REDDIT USERNAME TEST TEST";
+    color: #FF0000;
+}
+
+.link:not(.linkflair) .flairselectbtn {
+    font-size: 0;
+}
+.link:not(.linkflair) .flairselectbtn:after {
+    content: 'CLICK ME TO SELECT FLAIR';
+    background: RED;
+    border-radius: 2px;
+    color: #FFFFFF;    
+    font-size: x-small;
+    padding: 0 3px;
+}
+
+div.titlebox span.word {
+display: none
+}
+div.titlebox span.number:after {
+content: " box logos"
+}
+
+/* font styling 
+body {
+    font-family: 'Courier New',Courier,Monaco;
+}
+.link .title {
+font-size: medium;
+font-weight: bold;
+margin-bottom: 1px;
+}*/
+
+/* link styling */
+a:hover {
+color: #fff !important;
+background-color: #fc1d00;
+text-decoration: none !important;
+}
+
+/* Styles submit buttons */
+.morelink .nub {
+display: none;
+}
+.morelink {
+    background: #fc1d00;
+    font-family: 'Courier New',Courier,Monaco;
+    font-weight: bold;
+    border: 1.5px solid #fc1d00;
+
+}
+.morelink:hover {
+    background: #fc1d00;
+    border: 1.7px solid #191717;
+}
+.morelink a {
+    color: white;
+}
+.tabmenu li {
+        font-family: 'Courier New',Courier,Monaco;
+    font-weight: bold;
+}
+.tabmenu li.selected a:hover {
+    background:#fc1d00;
+    color: white;
+}
+
+
+/* Header */
+body >.content >.sharelink ~ .sitetable:before {
+content: "Please read the rules and FAQ in the sidebar."; 
+background-color: #fc1d00;
+font-family: 'Courier New',Courier,Monaco; 
+font-size: 14px; 
+color: #FFFFFF;
+text-align: left;
+font-weight: bold;
+display: block;
+padding:5px 10px;
+margin:5px 305px 5px 0px;
+border-radius: 8px;
+}
+
+#header {
+    padding: 0px 0 0;
+    border-bottom: 1px solid #c1c1c1;
+    position: relative;
+/*    background-image: url(%%head-bg%%) ;
+*/    background-repeat: repeat-x;
+    background-color: #fc1d00;
+    height: 84px;
+    white-space: nowrap;
+    }
+.tabmenu li a {
+    padding: 2px 6px 0 6px;
+    background-color: #fc1d00;
+    color: #fff;
+    font-size: 105%;
+    }
+.pagename a {
+padding: 60px 0 0 0;
+width: 200px;
+display: block;
+background-image: url(%%supreme%%);
+background-repeat: no-repeat;
+margin: 0 auto;
+font-size: 0px;
+position: absolute;
+left: 49px;
+top: 3px;
+}
+.pagename a:hover {
+    background-image: url(%%supreme-mirror%%);
+} 
+
+
+.flair {
+/* Setting the margin-bottom property makes sure that the flair doesn't look stupid next to the text. Just do it ok */
+margin-bottom: -5px;
+border: none !important;
+padding:0px;
+background: url(%%spritesheet%%) no-repeat -9999px -9999px;
+display:inline-block;
+}
+
+/* Makes flair not look stupid in moderator box. */
+li .flair {
+margin-top: 5px;
+}
+
+.flair-blues{background: url(%%spritesheet%%) no-repeat -9999px -9999px; background-position: 0 0; width: 17px; height: 17px; } 
+.flair-golds{background: url(%%spritesheet%%) no-repeat -9999px -9999px; background-position: 0 -67px; width: 17px; height: 17px; } 
+.flair-greens{background: url(%%spritesheet%%) no-repeat -9999px -9999px; background-position: 0 -134px; width: 17px; height: 17px; } 
+.flair-CDG{background: url(%%spritesheet2%%) no-repeat -9999px -9999px; background-position: 0 0; width: 17px; height: 17px; } 
+.flair-blues2{background: url(%%spritesheet2%%) no-repeat -9999px -9999px; background-position: 0 -67px; width: 17px; height: 17px; } 
+.flair-blacks{background: url(%%spritesheet2%%) no-repeat -9999px -9999px; background-position: 0 -134px; width: 17px; height: 17px; } 
+.flair-golds2{background: url(%%spritesheet2%%) no-repeat -9999px -9999px; background-position: 0 -201px; width: 17px; height: 17px; } 
+.flair-greens2{background: url(%%spritesheet2%%) no-repeat -9999px -9999px; background-position: 0 -268px; width: 17px; height: 17px; } 
+.flair-gucci{background: url(%%spritesheet2%%) no-repeat -9999px -9999px; background-position: 0 -335px; width: 17px; height: 17px; } 
+
+/*Sidebar flair.*/
+
+.side a[href^="/g"] {
+border: none !important;
+padding:0px;
+background: url(%%spritesheet%%) no-repeat -9999px -9999px;
+display:inline-block;
+background-position: 0 -67px;
+width: 17px;
+height: 17px;
+}
+
+.side a[href^="/b"] {
+border: none !important;
+padding:0px;
+background: url(%%spritesheet%%) no-repeat -9999px -9999px;
+display:inline-block;
+background-position: 0 0;
+width: 17px;
+height: 17px;
+}
+
+.flair-scam-warning:before {
+    content: ' ! ';
+}
+
+.flair-scam-warning:after {
+    content: ' ! ';
+}
+
+div.titlebox span.word {
+display: none
+}
+div.titlebox span.number:after {
+content: " box logos"
+}
+
+/* font styling 
+body {
+    font-family: 'Courier New',Courier,Monaco;
+}
+.link .title {
+font-size: medium;
+font-weight: bold;
+margin-bottom: 1px;
+}*/
+
+/* link styling */
+a:hover {
+color: #fff !important;
+background-color: #fc1d00;
+text-decoration: none !important;
+}
+
+
+/*.pagename a {
+padding: 60px 0 0 0;
+width: 200px;
+display: block;
+background-image: url(%%supreme%%);
+background-repeat: no-repeat;
+margin: 0 auto;
+font-size: 0px;
+position: absolute;
+left: 49px;
+top: 3px;
+}
+.pagename a:hover {
+    background-image: url(%%911%%);
+} 
+*/
+.newpagelink {
+ padding:3px 5px;
+ background-color:#ff9;
+}
+#header-bottom-left{
+    position: absolute;
+}
+#header-bottom-right {
+background-color: white;
+color: #FF4932;
+padding: 4px;
+-moz-border-radius-topleft: 7px;
+-webkit-border-top-left-radius: 7px
+}
+#header-bottom-right a {
+color: #fc1d00;
+}
+#header-bottom-right b {
+color: #fc1d00;
+}
+#userbarToggle {
+    color: #fc1d00;
+    background-color: white !important;
+    border-right: 0px !important
+    }
+
+
+
+/* Moderator flair. */
+.userattrs>.moderator {
+margin: 0 2px;
+font-size: 0px;
+line-height: 25px;
+border: none!important;
+padding: 0px;
+background: url(%%spritesheet%%) no-repeat -9999px -9999px;
+display: inline-block;
+background-position: 0 -134px;
+width: 17px;
+height: 17px;
+border-radius: 2px;
+}
+
+/* Secret Santa Flair */
+.flair-secretsanta {
+width: 38px !important;
+}
+
+.side a[href^="/ss"] {
+border: none !important;
+padding:0px;
+background: url(%%spritesheet%%) no-repeat -9999px -9999px;
+display:inline-block;
+background-position: -22px -68px;
+width: 16px;
+height: 16px;
+}
+
+.flair-secretsantasolo {
+border: none !important;
+padding:0px;
+background: url(%%spritesheet%%) no-repeat -9999px -9999px;
+display:inline-block;
+background-position: -22px -68px;
+width: 16px;
+height: 16px;
+}
+
+
+/* Scammer Warning Flair */
+.flair-scam-warning {
+font-size: 13px;
+font-weight: bold;
+font-family: 'Courier New';
+background: rgb(255, 194, 0);
+color: black;
+}
+
+.flair-scam-warning:before {
+    content: ' ! ';
+}
+
+.flair-scam-warning:after {
+    content: ' ! ';
+}
+
+
+/* Hides Downvotes -- downvotes back as of 4/30/14
+.arrow.down {
+visibility: hidden;
+display: none
+} */
+
+
+/* BASEDMODS */
+.sidecontentbox .helplink + .title h1 {
+    font-size: 0 !important
+}
+.sidecontentbox .helplink + .title:hover {
+    font-size: 0px !important; 
+    margin-left: 195px;
+    background: url(%%basedmods%%) no-repeat;
+    line-height:60px;
+}
+.sidecontentbox .helplink + .title h1:before {
+    font-size: 10pt !important; 
+    line-height:10pt;
+    content: "#BASEDMODS";
+ }
+
+ .sidecontentbox .helplink + .title h1:hover:before {
+    font-size: 20pt !important; 
+    margin-left: -200px;
+    line-height:10pt;
+ }
+
+ .stickied .title {
+    color: #fc1d00!important;
+}
+
+ .stickied-tagline {
+    color:#fc1d00!important;
+}
+
+.gilded { 
+    outline: 2px solid gold; background: rgba(255,215,0,.3); overflow: hidden; 
+}
+
+
+#mail.havemail {
+    background: url(%%HAVEMAIL%%);
+    width: 21px!important;
+}
+
+#mail.nohavemail {
+    background: url(%%NOMAIL%%);
+    width: 21px!important;
+}
+
+ /*How to change your mail icons*/
+#mail {
+position: relative;
+display: inline-block;
+text-indent: -9999px;
+overflow: hidden;
+min-width: 21px !important;
+width: auto !important;
+height: 16px;}
+
+.author[href$="/AutoModerator"] {
+    font-size: 0;
+    content: '';
+}
+.author[href$="/AutoModerator"]:after {
+    font-size: small;
+    content: 'SuprMod';
+    color: #228822;
+}
+
+.flair-AddSold {
+    width: 100px;
+    height: 26px;
+    background-image: url(%%addsold%%);
+    
+    -webkit-animation: play 5s steps(2) infinite;
+}
+
+@-webkit-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -200px; }
+}
+
+.comments-page .comment .md h4 {
+    color: #fc1d00;
+}
+
+.side a[href^="/bl"] {
+border: none!important;
+padding: 0px;
+background: url("%%spritesheet2%%") no-repeat -9999px -9999px;
+display: inline-block;
+background-position: 0 -134px;
+width: 17px;
+height: 17px;
+}
+
+/* link flairs */
+
+.linkflair-FSFT .linkflairlabel { background-color: #F63454; border: 1px solid #F63454; color: white; }
+.linkflair-brand .linkflairlabel { background-color: #31B5F6; border: 1px solid #31B5F6; color: white; }
+.linkflair-l4 .linkflairlabel { background-color: #7331F6; border: 1px solid #7331F6; color: white; }
+.linkflair-discussion .linkflairlabel { background-color: #F67331; border: 1px solid #F67331; color: white; }
+.linkflair-question .linkflairlabel { background-color: #009900; border: 1px solid #009900; color: white; }
+.linkflair-wdywt .linkflairlabel { background-color: #009900; border: 1px solid #009900; color: white; }
+.linkflair-pickup .linkflairlabel { background-color: #006600; border: 1px solid #006600; color: white; }
+.linkflair-talk .linkflairlabel { background-color: #ff0000; border: 1px solid #ff0000; color: white; }
+.linkflair-general .linkflairlabel { background-color: #001777; border: 1px solid #001777; color: white; }
+.linkflair-legitcheck .linkflairlabel { background-color: #000000; border: 1px solid #000000; color: white; }
+.linkflair-restock .linkflairlabel { background-color: #D3B900; border: 1px solid #D3B900; color: white; }
+.linkflair-leak .linkflairlabel { background-color: #0475AD; border: 1px solid #0475AD; color: white; }
+
+/* rename flair */
+.buttons a.flairselectbtn {
+    font-size: 0px
+    }
+.buttons a.flairselectbtn:after {
+    content: "add tag";
+    color: grey;
+    font-size: 10px
+    }
+.linkflair .buttons a.flairselectbtn:after {
+    content: "change tag";
+    color: gray;
+    font-size: 10px
+    }
+
+
+/* Tool-tip hover  */
+.content .flairselectbtn:hover:before {
+    
+    position: 60px;
+    display: block;
+    z-index: 1000;
+    /*width: 125px;*/
+    padding: 5px;
+    border: 1px solid #919191;
+    border-radius: 5px;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 11px;
+    font-weight: normal;
+    margin-left: -20px;
+    margin-top: -70px;
+    box-shadow: 2px 2px 5px #888888
+    }
+
+.side {
+    padding-left: 7px;
+    padding-right: 7px;
+    border-left: 1px solid #7e7e7e;
+    border-bottom: 1px solid #7e7e7e;
+    border-bottom-left-radius: 3px;
+
+}
+
+/* add color text */
+a[href="/purple"] { color:#7331F6; cursor: default !important;}
+a[href="/red"] { color:#F63454; cursor: default !important;}
+a[href="/orange"] { color:#F67331; cursor: default !important;}
+a[href="/blue"] { color:#31B5F6; cursor: default !important;}
+a[href="/lime"] { color:#009900; cursor: default !important;}
+a[href="/green"] { color:#006600; cursor: default !important;}
+
+/* Header Links*/
+ 
+.side .md > ol:not(:first-of-type) {
+    position: absolute;
+    top: -120px;
+    right: 0px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width: 600px;
+    list-style: none;
+}
+ 
+.side .md > ol:not(:first-of-type) a {
+    background-color: #010713;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 5px 0px 5px 5px;
+    text-decoration: none;
+    margin-bottom: 3px;
+    opacity: 0.8;
+}
+ 
+.side .md > ol a:hover {opacity: 1}
+.side .md > ol a[href$='#event'] {border: 2px solid #e29b1e}
+.side .md > ol a[href$='#notice'] {border: 2px solid #228822}
+.side .md > ol a[href$='#discussion'] {border: 2px solid #101828}
+ 
+.side .md > ol a[href$='#event']:after,
+.side .md > ol a[href$='#notice']:after,
+.side .md > ol a[href$='#discussion']:after {
+    margin: 0;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 6px 6px;
+}
+ 
+.side .md > ol a[href$='#event']:after {
+    background-color: #e29b1e;
+    content: "EVENT";
+    color: #8e6106;
+}
+.side .md > ol a[href$='#notice']:after {
+    background-color: #228822;
+    content: "NOTICE";
+    color: #abeaab;
+}
+.side .md > ol a[href$='#discussion']:after {
+    background-color: #101828;
+    content: "DISCUSSION";
+    color: #a9bbab;
+}
