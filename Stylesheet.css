@@ -578,3 +578,30 @@ a[href="/green"] { color:#006600; cursor: default !important;}
     content: "DISCUSSION";
     color: #a9bbab;
 }
+
+
+/*Sidebar Table*/
+.side .md table {
+    border: 2px solid #b6b6b6;
+    background-color: white;
+    box-shadow: 0 0 2px #ccc;
+    font-size: 10px !important;
+    text-align: center;
+}
+
+.side .md th, .md td {
+    padding: 5px 1ex;
+    vertical-align: top;
+    border: 1px solid #AAA;
+
+}
+
+.side .md th {
+    color: black;
+    background-color: #EEE;
+}
+
+.side .md td {
+    color: black;
+    background-color: #FFF;
+}
